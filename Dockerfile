@@ -24,7 +24,7 @@ RUN apt-get -yq install \
 	php5-memcache \
 	php5-mysql \
 	php5-pspell \
-	libapache2-mod-fastcgi
+	libapache2-mod-php5
 
 COPY pear-package.list pear-package.list
 RUN cat pear-package.list | while read file; do wget $file ;done
